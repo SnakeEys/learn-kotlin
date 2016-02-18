@@ -21,8 +21,8 @@ fun main(args: Array<String>) {
     println()
 
     println("get the length of getLength() ${getLength("")}")
-    println("get the length of getLength2(111)  ${getLenght3(111)}")
-    println("get the length of getLength3(\"Kotlin\") ${getLenght3("kotlin")}")
+    println("get the length of getLength2(111)  ${getLength2(111)}")
+    println("get the length of getLength3(\"Kotlin\") ${getLength3("kotlin")}")
 
 }
 
@@ -76,7 +76,7 @@ fun getLength2(obj : Any) : Int? {
 /**
  * There is a side-effect after type check on the right hand of &&
  */
-fun getLenght3(obj : Any) : Int? {
+fun getLength3(obj : Any) : Int? {
     if (obj is String && obj.isNotEmpty())
         return obj.length
     return null

@@ -91,5 +91,8 @@ fun lambda(arr : Collection<String>) {
         .map { it.toUpperCase() }
         .forEach { println(it) }
 }
+/**
+ * More information please check <Higher Functions and Lambda>
+ */
 
 

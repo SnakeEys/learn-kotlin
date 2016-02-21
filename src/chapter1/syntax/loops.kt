@@ -45,6 +45,9 @@ fun whileLoop(arr : Array<Int>) {
     }
 }
 
+/**
+ * Instance check by when operator
+ */
 fun whenCondition(obj : Any) {
     // something like switch case, but in kotlin, type can be checked by using when operator
     when (obj) {

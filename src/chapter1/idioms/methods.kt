@@ -34,11 +34,11 @@ class Turtle {
 
     }
 
-    fun turn (degrees : Double) {
+    fun turn(degrees: Double) {
 
     }
 
-    fun forward(pixels : Double) {
+    fun forward(pixels: Double) {
 
     }
 }
@@ -46,8 +46,8 @@ class Turtle {
 fun stream() {
     val stream = Files.newInputStream(Paths.get("/some/file.txt"))
     stream
-        .buffered()
-        .reader()
-        .use { reader -> println(reader.readText()) }
+            .buffered()
+            .reader()
+            .use { reader -> println(reader.readText()) }
 }
 

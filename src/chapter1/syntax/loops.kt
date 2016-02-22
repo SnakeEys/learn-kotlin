@@ -5,7 +5,7 @@ package chapter1.syntax
  * on 16/2/18.
  */
 
-fun main(args : Array<String>) {
+fun main(args: Array<String>) {
     var arr = arrayOf("1", "2", "3")
     forloop(arr)
 
@@ -38,9 +38,9 @@ fun forloop(arr: Array<String>) {
     }
 }
 
-fun whileLoop(arr : Array<Int>) {
+fun whileLoop(arr: Array<Int>) {
     var i = 0
-    while(i < arr.size) {
+    while (i < arr.size) {
         println(arr[i++])
     }
 }
@@ -48,7 +48,7 @@ fun whileLoop(arr : Array<Int>) {
 /**
  * Instance check by when operator
  */
-fun whenCondition(obj : Any) {
+fun whenCondition(obj: Any) {
     // something like switch case, but in kotlin, type can be checked by using when operator
     when (obj) {
         is Int -> println("Int value")
@@ -59,14 +59,14 @@ fun whenCondition(obj : Any) {
     }
 }
 
-fun rangeOperator(a : Int) {
+fun rangeOperator(a: Int) {
     // range/loop
     if (a in 1..10) {
         println("$a is in the range from 1 to 10.")
     }
 }
 
-fun checkIndex(arr : Array<Any>) {
+fun checkIndex(arr: Array<Any>) {
     if (10 !in 0..arr.lastIndex) {
         println("array's size is less than 10")
     }
@@ -77,7 +77,7 @@ fun checkIndex(arr : Array<Any>) {
 /**
  * Collection
  */
-fun checkElement(c : String, cl : Collection<String>) {
+fun checkElement(c: String, cl: Collection<String>) {
     // like contains() method in Java
     if (c in cl) {
         println("$cl contains the element of $c")
@@ -87,12 +87,12 @@ fun checkElement(c : String, cl : Collection<String>) {
 /**
  * Lambda expression to operate Collection
  */
-fun lambda(arr : Collection<String>) {
+fun lambda(arr: Collection<String>) {
     arr
-        .filter { it.startsWith("x") }
-        .sortedBy { it }
-        .map { it.toUpperCase() }
-        .forEach { println(it) }
+            .filter { it.startsWith("x") }
+            .sortedBy { it }
+            .map { it.toUpperCase() }
+            .forEach { println(it) }
 }
 /**
  * More information please check <Higher Functions and Lambda>

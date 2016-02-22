@@ -4,16 +4,16 @@ package chapter1.syntax
  * Created by snake
  * on 16/2/18.
  */
-fun main(args : Array<String>) {
+fun main(args: Array<String>) {
     // define read-only local variable value
-    val a : Int = 2
+    val a: Int = 2
     val b = 1            // Int type is inferred
-    val c : Int            // Type required when no initializer is provided
+    val c: Int            // Type required when no initializer is provided
     c = 3                 // definite assignment
     println("value of a is $a, which is immutable")
     println("value of b is $b, which is immutable")
     println("value of c is $c,  which is immutable")
-//    a = 4, ERROR because value defined by val modifier is immutable
+    //    a = 4, ERROR because value defined by val modifier is immutable
 
     var x = a
     println("mutable value x = $x")

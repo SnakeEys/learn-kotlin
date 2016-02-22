@@ -5,7 +5,7 @@ package chapter1.idioms
  * on 16/2/20.
  */
 
-data class Customer (var name : String, var age : Int)
+data class Customer(var name: String, var age: Int)
 
 fun main(args: Array<String>) {
     defaultValue()
@@ -29,7 +29,7 @@ fun main(args: Array<String>) {
 /**
  * Define default value for arguments
  */
-fun defaultValue(a : Int = 0, b : String = "") {
+fun defaultValue(a: Int = 0, b: String = "") {
     if (a == 0) {
         println("the function is using default value $a")
     }
@@ -41,17 +41,17 @@ fun defaultValue(a : Int = 0, b : String = "") {
 /**
  * Using lambda expression in Collection
  */
-fun filter(arr : Collection<Int>) : Collection<Int>{
+fun filter(arr: Collection<Int>): Collection<Int> {
     return arr.filter { x -> x > 0 }
     // or
-//    arr.filter { it > 0 }
+    //    arr.filter { it > 0 }
 }
 
 /**
  * Traversing a map/list
  */
-fun traverse(map : Map<String, String>) {
-    for ((k,v) in map) {
+fun traverse(map: Map<String, String>) {
+    for ((k, v) in map) {
         println("Key : $k")
         println("Value : $v")
     }

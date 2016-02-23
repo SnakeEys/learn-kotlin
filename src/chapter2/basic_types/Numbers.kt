@@ -21,18 +21,18 @@ fun main(args: Array<String>) {
 }
 
 fun conversions() {
-//    smaller types are not subtype of bigger one
-//    Hypothetical code,
-//    val a: Int? = 1 // A boxed Int (java.lang.Integer)
-//    val b: Long? = a // implicit conversion yields a boxed Long (java.lang.Long)
-//    print(a == b) print 'false'
+    //    smaller types are not subtype of bigger one
+    //    Hypothetical code,
+    //    val a: Int? = 1 // A boxed Int (java.lang.Integer)
+    //    val b: Long? = a // implicit conversion yields a boxed Long (java.lang.Long)
+    //    print(a == b) print 'false'
 
-//    actually explicit conversion is needed
+    //    actually explicit conversion is needed
     val a: Int = 1;
     val b: Long = a.toLong()
-//    println(a == b)   // this doesn't compile at all because of type mismatch
+    //    println(a == b)   // this doesn't compile at all because of type mismatch
 
-    val x =  3 + 3L // type inferred
+    val x = 3 + 3L // type inferred
     println(x is Long)
 }
 

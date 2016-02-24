@@ -7,7 +7,8 @@ package chapter2.flow
 
 fun main(args: Array<String>) {
     //    break_expression()
-    return_expression()
+    //    return_expression()
+    anonymous_fun(arrayOf(1, 3, 5, 6, 7, 3, 2, 5, 4))
 }
 
 
@@ -25,9 +26,8 @@ fun break_expression() {
     }
 }
 
+// this kind of return is likely a continue operator
 fun return_expression() {
-
-
     val arr = arrayOf(1, 3, 5, 6)
     arr.forEach lit@{
         if (it % 3 == 0) return@lit
@@ -41,4 +41,14 @@ fun return_expression() {
     }
 }
 
-
+/**
+ * Anonymous function replace lambda
+ */
+fun anonymous_fun(arr: Array<Int>) {
+    arr.forEach(
+            fun (value: Int) {
+                if (value % 2 == 0) return
+                println(value)
+            }
+    )
+}

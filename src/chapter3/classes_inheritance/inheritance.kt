@@ -1,4 +1,4 @@
-package chapter3.inheritances
+package chapter3.classes_inheritance
 
 /**
  * Created by snake

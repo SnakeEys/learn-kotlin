@@ -1,4 +1,4 @@
-package chapter3.inheritances
+package chapter3.classes_inheritance
 
 import kotlin.reflect.jvm.internal.impl.javax.inject.Inject
 

@@ -1,6 +1,7 @@
 package chapter4
 
-import java.util.concurrent.locks.Lock
+import java.io.File
+
 
 /**
  * Created by snake
@@ -8,7 +9,14 @@ import java.util.concurrent.locks.Lock
  */
 
 fun main(args: Array<String>) {
+    val f = File("/Users/snake/Documents/Github")
+    val files = f.listFiles();
+    for (file in files) {
+        if (file.name.equals(".git", true))
+            file.delete()
+        println("file name : ${file.name}")
 
+    }
 }
 
 /**
